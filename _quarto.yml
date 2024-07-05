@@ -2,14 +2,13 @@ project:
   type: website
 
 website:
-  title: "DARE 2024"
+  title: "New Approaches and Data Sources to Study Digital Media and Democracy"
+  site-url: "https://sebstier.github.io/ma_css24/"
   search: False
   navbar:
     right:
       - href: index.qmd
         text: Home
-      - href: index.qmd#participate
-        text: Participate
       - href: index.qmd#program
         text: Program
       - href: index.qmd#speakers
@@ -27,5 +26,4 @@ format:
 
 execute:
   freeze: auto
-
 

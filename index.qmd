@@ -1,303 +1,184 @@
 ---
-title: The D.A.R.E. Workshop
+title: New Approaches and Data Sources to Study Digital Media and Democracy
 subtitle: |
-  as a part of the [AAAI ICWSM 2024 conference](https://www.icwsm.org/2024/) at Buffalo, USA
-description: |
-  Disrupt, Ally, Resist, Embrace (DARE):<br> Action Items for Computational Social Scientists in a Changing World
-  
+  Tutorial at the [IC2S2 Conference 2024](https://ic2s2-2024.org), Philadelphia, USA
+
 section-divs: false
 toc: false
 title-block-banner: "#008794"
 title-block-banner-color: "white"
+format:
+  html:
+    link-external-newwindow: true
 
 ---
 
-:::{.white .center .big}
-A gathering to discuss the emerging dilemmas around the principles and practice of computational social science research in a changing technological landscape.
-:::
+## Logistics
+The tutorial will take place on Wednesday, July 17, 2024 from 9:00 AM to 12:30 PM	in Room Houston: Bodek Lounge. 
 
-:::{.center}
-**New participation format "Behind the Scenes" announced**
-:::
 
 ## Motivation
-:::{.main .normal}
-Many of the contemporary issues affecting computational social scientists are related to both, *processes of* and the *ethical principles underlying* computational social science research, which are often, and repeatedly, disrupted by platform politics, new technologies, their implications, and their unknowns. For instance, the increasingly turbulent techno-political online environment has seen a few key developments that have affected the scope and characteristics of computational social science research centered on social media. The global pandemic, a looming climate change crisis, violent populist events such as Jan 6, 2021 (first ever attack on the U.S. Capitol), with a repeat on Jan 8, 2023, in Brazil (a copycat attack on Brazil’s Praça dos Três Poderes), the almost two-year long war, the attack on Israel by Hamas and the subsequent armed conflict in Gaza; and ubiquitous conspiracy theories surrounding everything have spurred more discussions around access, inclusivity, privilege, and propaganda, than ever before.
 
-Furthermore, these real-world events have been accompanied (and often closely entangled) with technological changes in the online world: the rise of TikTok and the fall of Facebook, Twitter’s takeover by Elon Musk, and new AI technologies (Open AI’s ChatGPT, DALL-E, Stable Diffusion, GitHub CoPilot, etc.). Especially LLMs (Large Language Models) and their applications  are being widely discussed in academia and media as potential "disruptors" of scientific integrity, especially the jobs of knowledge workers.
+As we are in the middle of a crucial election year in the U.S. and Europe, political forces like populist and radical parties or movements or authoritarian governments abroad and societal processes such as polarization or declining trust in parliaments pose threats to the legitimacy of democratic institutions. Academic research on the role of digital media in shaping these processes and democracy at-large is striving. Nonetheless, our research areas and analysis potential are oftentimes confined to the data provided by platforms. For democracy research in particular, it is important to link digital behavioral data with individual-level information on demographics and variables like party identification, political trust or evaluations of other societal groups. While getting individual-level data has been an important issue ever since, platforms have restricted data access further. As potential remedies provided by the EU’s Digital Services Act are not yet foreseeable, researchers have to devise their own solutions for collecting relevant digital behavioral data in the "Post-API Age". In many academic institutions, research software for data collection like web tracking via browser add-ons, mobile apps or data donations are being developed. Currently, there is the risk that these initiatives remain unconnected and work is duplicated. The workshop aims to bring together research groups working on new technical solutions and innovative approaches for studying digital democracy.
 
-As computational social scientists, it is important not simply to study these events, but also to talk about them in light of our roles as the creators and stewards of knowledge. How, then, should the ICWSM community members react to these disruptions? Which disruptions should they embrace and which ones should they resist? Whom do they ally with, and for what purpose? These are not philosophical questions any longer. They are real and they need to be addressed. 
-:::
+## Rationale of the tutorial
 
-## Participate
-
-:::{.white .normal}
-In order to participate in the workshop, we invite **three** types of submissions:
-
-1. Short, 200-word statements of interest that express a desire to participate in the workshop discussion, by positioning oneself with respect to the issues discussed below.
-
-2. 2-5 page (in AAAI format) extended abstracts that detail one's position on one of the issues discussed below. Accepted abstracts will appear in the workshop proceedings. 
-
-:::{.highlight}
-3. "Behind the Scenes" insights on a recent paper (2-pages in AAAI format) 
-:::
-
-All types of submissions can be made at the submission portal on Easychair. Given limited space, preference will be given to those who submitted extended abstracts.
-
-The position papers should, at a high level, address concerns with processes of and the principles underlying computational social science research, and how they are often, and repeatedly, disrupted by platform politics, new technologies, their implications, and their unknowables. By <b>problems of process</b>, we refer to, for example, the fact that the increasing availability of proprietary AI tools has created challenges for the research process. With respect to <b>issues of principle</b>, we refer to the fact that recent events related to questionable technology takeovers and layoffs, exposes on techno-political alliances, and questionable labor practices at large technology companies create new dilemmas for researchers collecting, annotating, and analyzing online data. 
-
-Position papers should be grounded in evidence, prior published work, and ideally, also personal experiences. Examples of the position papers we seek can be found [here](https://www.nature.com/articles/d41586-023-00288-7), [here](https://www.nature.com/articles/d41586-022-03791-5), [here](https://www.nature.com/articles/d41586-022-03294-3), or they can be responses to news stories like [this one](https://www.wired.com/story/twitters-api-crackdown-will-hit-more-than-just-bots/). Ideally, position papers should respond to the provided prompts below (i.e., concerns about processess and principles), although we will also consider papers that do not explicitly respond to a prompt, but discuss an interesting and relevant problem pertinent to this discussion.
-
-:::{.highlight}
-The "Behind the Scenes" segment aims to shed light on
-the hurdles researchers face but seldom discuss in their final papers. In particular, we are looking fo submissions that touch upon issues regarding the themes outlined in detail in the next section.
-
-We encourage submissions from individuals and teams willing to share their experiences, including but not limited to, overcoming obstacles in data collection, navigating API limitations or costs, addressing reproducibility issues, and tackling the complexities of working with LLMs. Whether it was a struggle with dataset accessibility, an unexpected hiccup in model performance, or a creative workaround to a common problem, your insights can provide immense value to the community. This is an opportunity to discuss the often-unseen aspects of research that can significantly impact the outcome and interpretation of your work.
-
-By sharing these experiences, we hope to foster a more transparent, collaborative, and supportive research environment, enabling us to collectively tackle the complexities of modern computational social science research.
-:::
-
-### Themes
-::: {.panel-tabset}
-
-## Issues of Process
-The increasing availability of proprietary AI tools has created challenges for the research process as well as the researchers themselves -- to adapt or be left behind. 
-
-**Reproducibility:**: First, we can consider their impact on the research process. While preregistrations and transparency checklists offer promising directions for clarifying contentious issues in the research process, the use of technology to collect, process, and even create data (such as is possible through the use of LLMs) may imply that they can do little to ameliorate the reproducibility crisis plaguing social science today. Is the peer review process robust to these onslaughts? What can be done to establish the credibility and validity of published research? One of the workshop organizers, David Schoch, recently published [a piece](https://arxiv.org/abs/2307.01918) on these issues.
-
-**Embracing or Resisting new tools**: Second, we can consider their impact on researchers. On the one hand, they may spur opportunities to study known problems differently; on the other, they may trigger the study of the new problems they herald (or bring to light). New technologies and tools may also spell unfavorable consequences for those who lack the computational resources to use them, who may even consider pivoting their research directions and methods. Who can use these tools, and what would this imply for those who can not or may not? Related to the use of AI tools for doing research is the issue of the use of AI tools for evaluating research in processes such as peer-reviewing at conferences or grant agencies. While some grant agencies (for example, the NSF) have published [their guidelines](https://new.nsf.gov/news/notice-to-the-research-community-on-ai), others are learning the lessons the hard way (see allegations of use of AI for merit [review for Australia's Research Council](https://www.researchprofessionalnews.com/rr-news-australia-government-agencies-2023-6-furore-over-use-of-ai-to-assess-research-proposals/)).
-
-## Issues of Principle 
-
-Recent events related to questionable technology takeovers and layoffs, exposes on techno-political alliances, and questionable labor practices at large technology companies create new dilemmas for researchers collecting, annotating, and analyzing online data. These problems now extend to the dilemma of using methods and models that are the offshoots of anti-consumer corporate practices. For instance, large language models, or LLMs, are owned by private companies, but they were built by ingesting the entirety of human-produced text available on the internet without attribution. What does it mean to make privately-owned LLMs  central to one’s research? Are LLMs (and other generative models) the same as code libraries? Or something else entirely? Do they create dilemmas for ``conscientious objectors'', who might refuse to use such tools on ethical grounds? What would this mean for their research prospects at journals and other publication venues?  
-
-One can add to above-mentioned also the issue of truthfulness. LLMs are notorious for ``hallucinating'' or making stuff up, but not all researchers or the public at large are aware of the extent of this feature. Here is an example of researchers relying on Google's Bard to create case studies, which [turned out to be false](https://www.theguardian.com/business/2023/nov/02/australian-academics-apologise-for-false-ai-generated-allegations-against-big-four-consultancy-firms). What obligations do researchers have to expose such harms  and educate the public to be cautious? 
-
-## Issues of Access
-
-ICWSM researchers have for many years relied on APIs and large data collections from Twitter or Reddit. As both these platforms have severely restricted access to their data, researchers have started to look for other ways to study sociotechnical phenomena on these platforms or the web at large such as data donation from users, Internet observatories, simulation of human-like behaviors, etc. Similarly, given the high costs related to training or fine-tuning LLMs and similar AI models, there is a growing ecosystem for sharing models or data labeled via such models. These open up opportunities for allyship between organizations with a varying degree of resources to access data and models. How to raise awareness about such opportunities? How to create structures for formalizing such alliances? 
-:::
-
-:::
+This workshop will help build a community that brings together various leading research teams and researchers at different career levels. The workshop is situated at the intersection of democracy research, software development and computational social science, contributing to a joint understanding of the research needs, data gaps and identification of synergies. To create valuable research data and increase independence from platforms, the academic community needs to build sustainable research infrastructures and ultimately develop joint conceptual and measurement standards, e.g. for the variable of information exposure. The IC2S2 is the ideal venue for this goal as it brings together researchers from various disciplinary backgrounds, with expertise in substantive research questions, software engineering, open-source development and open science practices, many of whom share a research interest in digital media and democracy, broadly conceived. Participants will learn about innovative approaches in collecting and analyzing digital behavioral data, the most pressing themes in research on (digital) democracy and will be able to articulate and identify joint infrastructure demands. The teams working on new methodological approaches can gather valuable feedback at the workshop, learn more about and create synergies with the work of other teams.
 
 
-:::{.white .center}
-[Submit](https://easychair.org/my/conference?conf=dare24){.button}
-:::
-
-
-
-:::{.center}
-### Important Dates
-:::
-
-- Workshop Papers Submissions: March 31st
-- Workshop Paper Acceptance Notification: April 14th
-- Workshop Final Camera-Ready Paper Due: May 5th
-- ICWSM-2024 Workshops Day: June 3rd
 
 ## Program
 
-This is a full-day workshop. Our goal is to provide a venue in which participants will engage with the listed issues through various formats: keynote speakers and panels, collaborative debate-style breakouts, and lightning sessions. 
+Our goal is to provide a venue in which participants will engage with the topic through various formats: presentations of experts on the field, collaborative breakouts, and plenary discussion. 
 
-Depending on whether participants (those who are invited or who will apply to participate) are able to present in person or remotely, we will create a program to take into account how to best serve both audiences. 
+We will have at least five input presentations followed by respective Q&A sessions where recent innovative approaches for collecting data and studying digital media and democracy will be presented and discussed. We will move into smaller groups to work on cross-cutting themes that emerge across presentations. We will critically discuss the applicability of different approaches for specific research questions, the remaining blind spots of the proposed data collection approaches and how these could complement each other. 
 
-The tentative schedule can be found below. (Buffalo local time, EDT/GMT-4)  
-
-
-<table class="table table-sm table-striped">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 44%">
-<col style="width: 40%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Time</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Speaker</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">8:30 - 09:00am</td>
-<td style="text-align: left;">Coffee</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">09:00 - 09:15am</td>
-<td style="text-align: left;">Introduction</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">09:15 - 10:15am</td>
-<td style="text-align: left;">Panel: More data is not the answer/Avoiding integrity crises in research</td>
-<td style="text-align: left;">Orestis Papakyriakopoulos, Helena Webb, moderated by Ella Haig</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">10:15 - 10:50am</td>
-<td style="text-align: left;">Replicability of CSS</td>
-<td style="text-align: left;">Chung-hong Chan</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">10:50 - 11:10am</td>
-<td style="text-align: left;">Coffee Break</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">11:10 - 12:45am</td>
-<td style="text-align: left;">Paper Session</td>
-<td style="text-align: left;">
-1. Chaitya Shah - <em>Can Social Media Platforms Transcend Political Labels? An Analysis of Neutral Conservations on Truth Social
-</em> <a href="paper/2024_03.pdf">Link</a><br><br>
-2. Avi Rosenfeld - <em>Fighting Bias in the 2023-2024 Hamas-Israel Conflict</em> <a href="paper/2024_02.pdf">Link</a><br><br>
-3. Ke Zhou - <em>How Western, Educated, Industrialized, Rich, and Democratic is Social
-Computing Research?</em> <a href="paper/2024_05.pdf">Link</a><br><br>
-4. Fatima Zahrah, Jason R.C. Nurse - <em>Embedding Privacy in Computational Social Science and Artificial Intelligence Research </em> <a href="paper/2024_04.pdf">Link</a><br><br>
-
-</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">12:45 - 2:00pm</td>
-<td style="text-align: left;">Joint Lunch Break with Data Challenge Workshop</td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-
-The afternoon are joint (offline) sessions with the Data Challenge Workshop. More details will follow.
-
-<table class="table table-sm table-striped">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 44%">
-<col style="width: 40%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Time</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Speaker</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">02:00 - 03:30pm</td>
-<td style="text-align: left;">Panel</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">03:30 - 04:00pm</td>
-<td style="text-align: left;">Coffee Break</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">04:00 - 05:30pm</td>
-<td style="text-align: left;">Behind the scene lighting talks</td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
+The tentative schedule can be found below (all times are Philadelphia local time, EDT/GMT-4).
 
 
+
+```{r, echo=FALSE, warning=FALSE, out.width="105%", message=FALSE}
+library(openxlsx)
+library(tidyverse)
+library(gt)
+library(gtExtras)
+read.xlsx("IC2S2_Tutorial_Program.xlsx") %>%
+  select(-`Who?`) %>% 
+    #rename(`Required reading` = "Required.reading") %>%
+    gt() %>%
+    tab_header(md("**Schedule and Program**")) %>%
+    fmt_markdown(columns = TRUE) %>%
+    cols_width(Time ~ px(250),
+               Topic ~ px(50),
+               Speaker ~ px(50)
+               ) %>%
+    cols_align(columns = 1,
+             align = "left") %>% 
+    tab_options(data_row.padding = px(11)) %>%
+    tab_options(table.align	= "left",
+                heading.title.font.size = 20,
+                table.font.size = 16,
+                  column_labels.font.weight = "bold") #%>% 
+   #   gt_highlight_rows(
+   #   rows = c(2, 4, 6, 8, 10),
+   #   #fill = "lavender",
+   #   font_weight = "normal"
+   # )
+
+```
 
 ## Speakers
 
-::: {.column width="33%" .center}
-![](https://www.professoren.tum.de/fileadmin/w00bgr/www/pics/Papakyriakopoulos_Orestis.jpg){width="100%" height="auto"}
-
-[Orestis Papakyriakopoulos](https://www.professoren.tum.de/papakyriakopoulos-orestis)
-:::
-
-::: {.column width="66%" .left}
-
-::: {.panel-tabset}
-### Bio
-Orestis Papakyriakopoulos is a professor for societal computing. His research provides ideas, frameworks, and practical solutions towards just, inclusive and participatory socio-algorithmic ecosystems. He builds tools and performs foundational research on platforms and artificial intelligence. Orestis analyzes new and old media by the application of data-intensive algorithms, as well as the political and social impact of the use of data-intensive algorithms themselves.
-
-### Topic
-
-TBD
-
-:::
-:::
-
-
-::: {.column width="33%" .center}
-![](https://www.cs.ox.ac.uk/files/11015//HW%20photo%20summer%202018.jpg){width="100%" height="auto"}
-
-[Helena Webb](https://www.nottingham.ac.uk/research/groups/ai/people/helena.webb)
-:::
-
-::: {.column width="66%" .left}
-
-::: {.panel-tabset}
-### Bio
-
-Helena Webb is an Assistant Professor for AI at Nottingham. She is an experienced socio-technical researcher with expertise across responsible research and innovation (RRI), human-computer interaction (HCI), science and technology studies, and the sociology of technology. She is interested in the ways in which users interact with technologies in different kinds of setting and how social action both shapes and is shaped by innovation. 
-
-### Topic
-
-TBD
-
-:::
-:::
-
-::: {.column width="33%" .center}
-![](https://upload.wikimedia.org/wikipedia/commons/a/a2/Person_Image_Placeholder.png){width="60%" height="auto"}
-
-[Chung-hong Chan](https://www.gesis.org/institut/ueber-uns/mitarbeitendenverzeichnis/person/Chung-hong.Chan?no_cache=1)
-:::
-
-::: {.column width="66%" .left}
-
-::: {.panel-tabset}
-### Bio
-
-Dr. Chung-hong Chan (PhD University of Hong Kong, 2018) is Senior Researcher in the Department of Computational Social Science, GESIS – Leibniz Institute for the Social Sciences, Cologne, Germany, and External Fellow at the Mannheim Center for European Social Research, University of Mannheim (Germany). An epidemiologist by training, he is interested in developing new quantitative methods for communication research. 
-
-### Topic
-
-What makes computational communication science (ir)reproducible? ([paper](https://journal.computationalcommunication.org/article/view/5926))
-
-:::
-:::
-
 
 :::{.main}
+
+
+::: {.column width="33%" .center}
+![](img/organizers/img_kmetty.png)
+
+[Zoltan Kmetty](https://tatk.elte.hu/en/staff/zoltan-kmetty)
+:::
+
+::: {.column width="66%" .left}
+
+::: {.panel-tabset}
+### Bio
+Zoltán Kmetty, Ph.D., is an Associate Professor in the Sociology department at the Eötvös Loránd University Faculty of Social Sciences in Budapest, Hungary. He has diverse research interests, including political sociology, network studies, and suicide research. He is an expert in methodology, survey design, and quantitative analysis. In several projects, Zoltán has collected various types of digital behavioral data via data donation approaches. 
+
+### Topic
+
+TBD
+
+:::
+:::
+
+
+
+::: {.column width="33%" .center}
+![](img/organizers/img_gruening.png){width=72%}
+
+[David Grüning](https://davidgruening.github.io)
+:::
+
+::: {.column width="66%" .left}
+
+::: {.panel-tabset}
+### Bio
+
+David Grüning is a Doctoral Researcher at GESIS -- Leibniz Institute for the Social Sciences. David is Chair of the Science Board at Prosocial Design Network (PDN) and Lead Scientist at one sec. His research focuses on biases in in self-reports and more generally fundamental theory of personality assessment. Further, David researches cognition-related personality constructs and social-emotional competencies.
+
+
+### Topic
+
+TBD
+
+:::
+:::
+
+
+::: {.column width="33%" .center}
+![](img/organizers/img_goel.png){width=71%}
+
+[Pranav Goel](https://lazerlab.net/people/pranav-goel)
+:::
+
+::: {.column width="66%" .left}
+
+::: {.panel-tabset}
+### Bio
+
+Pranav Goel is a Postdoctoral Research Associate at the Lazer Lab at Northeastern University's Network Science Institute. His research interests broadly span computational social science and natural language processing, viewing language as a social phenomenon and text data as a potent digital trace of societal dynamics. He is particularly interested in the sociopolitical phenomenon of framing (including agenda-setting) in news and social media.
+
+### Topic
+
+TBD
+
+:::
+:::
+
+:::
+
+
+
+
+
+
+
 ## Organizers
+:::{.main}
+
 ::: {.columns}
 
 ::: {.column width="25%" .center}
-![](img/organizers/eni.png)
+![](img/organizers/img_stier.png){width=80%}
 
-Eni Mustafaraj
+[Sebastian Stier](https://sebastianstier.com)
 
-[Wellesley College]{.normal}
+[GESIS, Cologne & University of Mannheim]{.normal}
 :::
 
 ::: {.column width="25%" .center}
-![](img/organizers/david.png)
+![](img/organizers/img_lorenz_spreen.png){width=80%}
 
-David Schoch
+[Philipp Lorenz-Spreen](https://www.mpib-berlin.mpg.de/staff/philipp-lorenz-spreen)
 
-[GESIS]{.normal}
+[Max Planck Institute for Human Development, Berlin]{.normal}
 :::
 
 ::: {.column width="25%" .center}
-![](img/organizers/ella.jpg)
+![](img/organizers/img_oswald.png){width=80%}
 
-Ella Haig
+[Lisa Oswald](https://lfoswald.github.io)
 
-[University of Portsmouth]{.normal}
+[Max Planck Institute for Human Development, Berlin]{.normal}
 :::
 
 ::: {.column width="25%" .center}
-![](img/organizers/jason.jpg)
+![](img/organizers/img_lazer.png){width=80%}
 
-Jason Nurse
+[David Lazer](https://lazerlab.net)
 
-[University of Kent]{.normal}
+[Northeastern University, Boston]{.normal}
 :::
 
 :::
