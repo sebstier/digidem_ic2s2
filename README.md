@@ -1,1 +1,1 @@
-website for the 2024 DARE Workshop at ICWSM.
+Website for the Tutorial "New Approaches and Data Sources to Study Digital Media and Democracy" at the IC2S2 Conference 2024, Philadelphia, USA.
