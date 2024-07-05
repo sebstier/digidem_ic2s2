@@ -3,7 +3,7 @@ project:
 
 website:
   title: "New Approaches and Data Sources to Study Digital Media and Democracy"
-  site-url: "https://sebstier.github.io/ma_css24/"
+  site-url: "https://digidem_ic2s2.github.io"
   search: False
   navbar:
     right:
